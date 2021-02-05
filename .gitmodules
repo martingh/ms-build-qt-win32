@@ -1,0 +1,4 @@
+[submodule "conan-qt-5.15.1_patched"]
+	path = conan-qt-5.15.1_patched
+	url = https://github.com/martingh/conan-qt
+	branch = stable/5.15.1_patched
