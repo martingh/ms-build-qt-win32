@@ -22,7 +22,7 @@ jobs:
           python -m pip install --user conan
           conan user
           conan remote add bincrafters https://api.bintray.com/conan/bincrafters/public-conan
-          conan info conan-qt-5.15.1_patched --settings arch=${{ matrix.arch }} -o qt:shared=True
+          conan install --build=missing --settings arch=${{ matrix.arch }} conan-libiconv-excerpt
           conan install --build=missing --settings arch=${{ matrix.arch }} -o qt:shared=True conan-qt-5.15.1_patched
           mkdir artifacts
           xcopy $(cat C:\Users\runneradmin\.conan\data\qt\**\**\**\package\**\.conan_link) .\artifacts\ /E /Y

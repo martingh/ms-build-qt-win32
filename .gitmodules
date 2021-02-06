@@ -2,3 +2,6 @@
 	path = conan-qt-5.15.1_patched
 	url = https://github.com/martingh/conan-qt
 	branch = stable/5.15.1_patched
+[submodule "conan-libiconv-excerpt"]
+	path = conan-libiconv-excerpt
+	url = https://github.com/martingh/conan-libiconv-excerpt
